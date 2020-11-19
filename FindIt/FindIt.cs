@@ -33,6 +33,11 @@ namespace FindIt
         public static bool isTVPPatchEnabled = false;
         public ProceduralObjectsTool POTool;
 
+        /// <summary>
+        /// Move It mod enabled?
+        /// </summary>
+        public static bool isMoveItEnabled = false;
+
         public bool firstVisibleFlag = false;
 
         public static AssetTagList list;
@@ -61,9 +66,10 @@ namespace FindIt
                     return;
                 }
 
-                isRicoEnabled = IsRicoEnabled();
-                isPOEnabled = IsPOEnabled();
-                isTVPPatchEnabled = IsTVPPatchEnabled();
+                isRicoEnabled = IsModEnabled("ploppablerico");
+                isPOEnabled = IsModEnabled("proceduralobjects");
+                isTVPPatchEnabled = IsModEnabled("tvproppatch");
+                isMoveItEnabled = IsModEnabled("moveit");
 
                 if (isPOEnabled)
                 {
@@ -248,7 +254,6 @@ namespace FindIt
                 HideAllOptionPanels();
 
                 PrefabInfo prefab = uIButton.objectUserData as PrefabInfo;
-
                 string key = Asset.GetName(prefab);
                 if (AssetTagList.instance.assets.ContainsKey(key) && AssetTagList.instance.assets[key].onButtonClicked != null)
                 {
@@ -266,6 +271,12 @@ namespace FindIt
                 else
                 {
                     SelectPrefab(prefab);
+                }
+
+                Event e = Event.current;
+                if ((e.shift || e.control) && isMoveItEnabled && !(prefab is NetInfo))
+                {
+                    MoveItClone(prefab);
                 }
             }
         }
@@ -323,31 +334,18 @@ namespace FindIt
             }
         }
 
-        private static bool IsRicoEnabled()
+        private static bool IsModEnabled(string assemblyName)
         {
-            return IsAssemblyEnabled("ploppablerico"); ;
-        }
-
-        private static bool IsPOEnabled()
-        {
-            return IsAssemblyEnabled("proceduralobjects");
-        }
-
-        private static bool IsTVPPatchEnabled()
-        {
-            return IsAssemblyEnabled("tvproppatch");
-        }
-
-        private static bool IsAssemblyEnabled(string assemblyName)
-        {
-
             foreach (PluginManager.PluginInfo plugin in PluginManager.instance.GetPluginsInfo())
             {
                 foreach (Assembly assembly in plugin.GetAssemblies())
                 {
                     if (assembly.GetName().Name.ToLower() == assemblyName)
                     {
-                        Debugging.Message($"Found enabled mod: {assemblyName}. Find It 2 integration will be applied");
+                        if (plugin.isEnabled)
+                        {
+                            Debugging.Message($"Found enabled mod: {assemblyName}. Find It 2 integration will be applied");
+                        }
                         return plugin.isEnabled;
                     }
                 }
@@ -463,6 +461,28 @@ namespace FindIt
                 if (UISearchBox.instance?.panel != null)
                     UISearchBox.instance.panel.backgroundSprite = "GenericTab";
             }
+        }
+
+        public void MoveItClone(PrefabInfo prefab)
+        {
+            Debugging.Message("MoveItClone called");
+
+            // make a fake move it export xml
+
+            // call move it Import
+            ToolController toolController = UnityEngine.Object.FindObjectOfType<ToolController>();
+            Component moveItTool = toolController.GetComponent("MoveItTool");
+            toolController.CurrentTool = moveItTool as ToolBase;
+            Type MoveItToolType = Type.GetType("MoveIt.MoveItTool");
+
+            MethodInfo ImportMI = MoveItToolType.GetMethod("Import", new Type[] { typeof(string)});
+            if (ImportMI == null) Debugging.Message("Import is null");
+            ImportMI.Invoke(moveItTool, new object[] { "FindIt2FakeMoveItExport" });
+
+            // delete fake move it export xml
+
+
+            Debugging.Message("MoveItClone returned");
         }
     }
 
