@@ -97,7 +97,7 @@ namespace FindIt.GUI
                 "ToolbarIconPropsSpecialBillboards",
                 "SubBarPropsCommonLights",
                 "InfoIconResources",
-                "ToolbarIconProps",
+                "ToolbarIconHelp",
                 "RoadOptionUpgrade"
             };
 

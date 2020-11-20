@@ -98,7 +98,7 @@ namespace FindIt.GUI
                 "Oneway",
                 "Parking",
                 "NoParking",
-                "ToolbarIconProps"
+                "ToolbarIconHelp"
             };
 
             public static readonly string[] tooltips =

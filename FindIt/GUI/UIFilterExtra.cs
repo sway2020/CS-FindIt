@@ -34,6 +34,9 @@ namespace FindIt.GUI
         // building level
         public UIDropDown buildingLevelDropDownMenu;
 
+        // unused assets
+        private UIButton exportButton;
+
         public enum DropDownOptions
         {
             AssetCreator = 0,
@@ -89,10 +92,13 @@ namespace FindIt.GUI
                 {
                     UpdateBuildingHeightOptionVisibility(true);
                 }
-
                 else if (optionDropDownMenu.selectedIndex == (int)DropDownOptions.BuildingLevel)
                 {
                     UpdateBuildingLevelOptionVisibility(true);
+                }
+                else if (optionDropDownMenu.selectedIndex == (int)DropDownOptions.UnusedAssets)
+                {
+                    UpdateUnusedAssetsVisibility(true);
                 }
 
                 if (optionDropDownCheckBox.isChecked)
@@ -270,6 +276,20 @@ namespace FindIt.GUI
                 }
             };
 
+            // unused export asset list
+            exportButton = SamsamTS.UIUtils.CreateButton(this);
+            exportButton.size = new Vector2(80, 25);
+            exportButton.text = Translations.Translate("FIF_EF_UNEXP");
+            exportButton.textScale = 0.8f;
+            exportButton.textPadding = new RectOffset(0, 0, 5, 0);
+            exportButton.tooltip = Translations.Translate("FIF_EF_UNEXPTP");
+            exportButton.isVisible = false;
+            exportButton.relativePosition = new Vector3(optionDropDownMenu.relativePosition.x + optionDropDownMenu.width + 15, 5);
+            exportButton.eventClick += (c, p) =>
+            {
+                ExportUnunsedTool.ExportUnused();
+            };
+
         }
         public void Close()
         {
@@ -324,11 +344,17 @@ namespace FindIt.GUI
             buildingLevelDropDownMenu.isVisible = visibility;
         }
 
+        private void UpdateUnusedAssetsVisibility(bool visibility)
+        {
+            exportButton.isVisible = visibility;
+        }
+
         private void HideAll()
         {
             UpdateAssetCreatorOptionVisibility(false);
             UpdateBuildingHeightOptionVisibility(false);
             UpdateBuildingLevelOptionVisibility(false);
+            UpdateUnusedAssetsVisibility(false);
         }
     }
 }

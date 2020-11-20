@@ -90,7 +90,7 @@ namespace FindIt
             // if there is something in the search input box
             if (!text.IsNullOrWhiteSpace())
             {
-                string[] keywords = Regex.Split(text, @"([^\w!#+]|[-]|\s)+", RegexOptions.IgnoreCase);
+                string[] keywords = Regex.Split(text, @"([^\w!#+%]|[-]|\s)+", RegexOptions.IgnoreCase);
                 bool matched, orSearch;
                 float score, orScore;
 
@@ -109,7 +109,7 @@ namespace FindIt
                         {
                             if (!keyword.IsNullOrWhiteSpace())
                             {
-                                if (keyword == "!" || keyword == "#" || keyword == "+") continue;
+                                if (keyword == "!" || keyword == "#" || keyword == "+" || keyword == "%") continue;
                                 if (keyword.StartsWith("!") && keyword.Length > 1) // exclude search
                                 {
                                     score = GetOverallScore(asset, keyword.Substring(1), filter);
@@ -138,6 +138,24 @@ namespace FindIt
                                     orScore += score;
                                     asset.score += score;
                                 }
+                                else if (keyword.StartsWith("%") && keyword.Length > 1) // search by workshop id
+                                {
+                                    if (asset.prefab.m_isCustomContent && asset.steamID != 0)
+                                    {
+                                        score = GetScore(keyword.Substring(1), asset.steamID.ToString(), null);
+                                        if (score <= 0)
+                                        {
+                                            matched = false;
+                                            break;
+                                        }
+                                    }
+                                    else
+                                    {
+                                        matched = false;
+                                        break;
+                                    }
+                                }
+                                
                                 else
                                 {
                                     // Calculate relevance score. Algorithm decided by Sam. Unchanged.
@@ -637,7 +655,8 @@ namespace FindIt
                 }
             }
 
-            CleanDictionarys();
+            // Inherited from Find It 1. I don't know why this is needed. It only removes the 's' in a name tag
+            // CleanDictionarys();
         }
 
         public void AddCustomTags(Asset asset, string text)
@@ -801,6 +820,8 @@ namespace FindIt
             return tag;
         }
 
+        // Inherited from Find It 1. I don't knonw why this is needed.
+        /*
         private void CleanDictionarys()
         {
             foreach (Asset asset in assets.Values)
@@ -844,6 +865,7 @@ namespace FindIt
                 }
             }
         }
+        */
 
         // if SteamID == 0, not a workshop asset
         private static ulong GetSteamID(PrefabInfo prefab)
@@ -975,7 +997,7 @@ namespace FindIt
             }
         }
 
-        private void UpdateAssetInstanceCount(Asset asset)
+        public void UpdateAssetInstanceCount(Asset asset)
         {
             if (!prefabInstanceCountDictionary.ContainsKey(asset.prefab)) asset.instanceCount = 0;
             else asset.instanceCount = prefabInstanceCountDictionary[asset.prefab];

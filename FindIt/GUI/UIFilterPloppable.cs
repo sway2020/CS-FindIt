@@ -102,7 +102,7 @@ namespace FindIt.GUI
                 "SubBarCampusAreaUniversity",
                 "SubBarCampusAreaVarsitySports",
                 "SubBarIndustryFishing",
-                "ToolbarIconProps"
+                "ToolbarIconHelp"
             };
 
             public static readonly string[] tooltips =

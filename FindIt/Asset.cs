@@ -292,6 +292,7 @@ namespace FindIt
                 name = name.Substring(0, index);
             }
 
+            /*
             name = Regex.Replace(name, @"[_-]+", " ");
             name = Regex.Replace(name, @"([A-Z][a-z]+)", " $1");
             name = Regex.Replace(name, @"([^\d])(\d+)", "$1 $2");
@@ -300,6 +301,7 @@ namespace FindIt
             name = Regex.Replace(name, @"\s+", " ");
 
             name = CultureInfo.CurrentCulture.TextInfo.ToTitleCase(name).Trim();
+            */
 
             return name;
         }

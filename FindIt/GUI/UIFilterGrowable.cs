@@ -75,7 +75,7 @@ namespace FindIt.GUI
                 "IconPolicyOre",
                 "ZoningCommercialLeisure",
                 "ZoningCommercialTourist",
-                "ToolbarIconProps"
+                "ToolbarIconHelp"
             };
 
             public static readonly string[] tooltips =

@@ -189,6 +189,8 @@
     <Translation ID="FIF_SET_SSKTP" String="Hold SHIFT when switching asset type to share query keyword temporarily" />
     <Translation ID="FIF_TAG_SA" String="Select All" />
     <Translation ID="FIF_TAG_SATP" String="Select all displayed items" />
+    <Translation ID="FIF_EF_UNEXP" String="Export" />
+    <Translation ID="FIF_EF_UNEXPTP" String="Export the list of unused workship id's into an HTML file with workshop links" />
 
   </Translations>
 </Language>
