@@ -69,12 +69,7 @@ namespace FindIt
                 isPOEnabled = IsModEnabled("proceduralobjects");
                 isTVPPatchEnabled = IsModEnabled("tvproppatch");
                 isMoveItEnabled = IsModEnabled("moveit");
-
-                if (isPOEnabled)
-                {
-                    POTool = new ProceduralObjectsTool();
-                }
-
+                
                 list = AssetTagList.instance;
 
                 UITabstrip tabstrip = ToolsModifierControl.mainToolbar.component as UITabstrip;
