@@ -34,6 +34,8 @@ namespace FindIt
 
         internal static bool useLightBackground = false;
 
+        internal static bool useMoveItForProps = false;
+
         internal static bool disableUpdateNotice = false;
 
         internal static double lastUpdateNotice = 0.0;
@@ -111,6 +113,9 @@ namespace FindIt
 
         [XmlElement("UseLightBackground")]
         public bool UseLightBackground { get => Settings.useLightBackground; set => Settings.useLightBackground = value; }
+
+        [XmlElement("UseMoveItForProps")]
+        public bool UseMoveItForProps { get => Settings.useMoveItForProps; set => Settings.useMoveItForProps = value; }
 
         [XmlElement("DisableUpdateNotice")]
         public bool DisableUpdateNotice { get => Settings.disableUpdateNotice; set => Settings.disableUpdateNotice = value; }

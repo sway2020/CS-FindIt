@@ -542,7 +542,6 @@ namespace FindIt.GUI
                 if (!Settings.disableUpdateNotice && (ModInfo.updateNoticeDate > Settings.lastUpdateNotice))
                 {
                     UIUpdateNoticePopUp.ShowAt();
-                    UIUpdateNoticePopUp.instance.relativePosition += new Vector3(0, -200);
                     Settings.lastUpdateNotice = ModInfo.updateNoticeDate;
                     XMLUtils.SaveSettings();
                 }

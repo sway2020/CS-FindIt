@@ -18,7 +18,8 @@ namespace FindIt.GUI
             name = "FindIt_UIQuickMenuPopUp";
             atlas = SamsamTS.UIUtils.GetAtlas("Ingame");
             backgroundSprite = "GenericPanelWhite";
-            size = new Vector2(480, 250);
+            size = new Vector2(600, 250);
+            relativePosition += new Vector3(-200, -200);
 
             UILabel title = AddUIComponent<UILabel>();
             title.text = Translations.Translate("FIF_QM_TIT");
@@ -109,6 +110,20 @@ namespace FindIt.GUI
                 FindIt.instance.UpdateDefaultPanelBackground();
             };
 
+            // Use Move It to place props
+            UICheckBox useMoveItForProps = SamsamTS.UIUtils.CreateCheckBox(this);
+            useMoveItForProps.isChecked = Settings.useMoveItForProps;
+            useMoveItForProps.label.text = Translations.Translate("FIF_SET_MIP");
+            useMoveItForProps.label.textScale = 0.8f;
+            useMoveItForProps.width = size.x;
+            useMoveItForProps.label.textColor = new Color32(0, 0, 0, 255);
+            useMoveItForProps.relativePosition = new Vector3(title.relativePosition.x, useLightBackground.relativePosition.y + useLightBackground.height + 10);
+            useMoveItForProps.eventCheckChanged += (c, i) =>
+            {
+                Settings.useMoveItForProps = useMoveItForProps.isChecked;
+                XMLUtils.SaveSettings();
+            };
+
             // Show asset type panel
             UICheckBox showAssetTypePanel = SamsamTS.UIUtils.CreateCheckBox(this);
             showAssetTypePanel.isChecked = Settings.showAssetTypePanel;
@@ -117,7 +132,7 @@ namespace FindIt.GUI
             showAssetTypePanel.width = size.x;
             showAssetTypePanel.label.textColor = new Color32(0, 0, 0, 255);
             showAssetTypePanel.tooltip = Translations.Translate("FIF_ATP_TP");
-            showAssetTypePanel.relativePosition = new Vector3(title.relativePosition.x, useLightBackground.relativePosition.y + useLightBackground.height + 10);
+            showAssetTypePanel.relativePosition = new Vector3(title.relativePosition.x, useMoveItForProps.relativePosition.y + useMoveItForProps.height + 10);
             showAssetTypePanel.eventCheckChanged += (c, i) =>
             {
                 Settings.showAssetTypePanel = showAssetTypePanel.isChecked;

@@ -202,6 +202,8 @@
     <Translation ID="FIF_EF_USEXPTP" String="Export the list of all used workshop ID's into an HTML file with workshop links" />
     <Translation ID="FIF_EF_USEXPTPSE" String="Export the list of used workshop ID's from the last search into an HTML file with workshop links" />
     <Translation ID="FIF_SE_SIZEX" String="Click this x to reset the building size filters" />
+    <Translation ID="FIF_SET_MIP" String="Use Move It to place props. Hold SHIFT and re-click thumbnail to use vanilla tool" />
+
 
   </Translations>
 </Language>

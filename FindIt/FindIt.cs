@@ -269,9 +269,14 @@ namespace FindIt
                 }
 
                 Event e = Event.current;
-                if ((e.shift || e.control) && isMoveItEnabled && !(prefab is NetInfo))
-                {
-                    MoveItClone(prefab);
+                if (!e.shift && !e.control){
+                    if (isMoveItEnabled && !(prefab is NetInfo))
+                    {
+                        if (Settings.useMoveItForProps && prefab is PropInfo)
+                        {
+                            MoveItCloneTool.MoveItClone(prefab);
+                        }
+                    }
                 }
             }
         }
@@ -458,28 +463,6 @@ namespace FindIt
                 if (UISearchBox.instance?.panel != null)
                     UISearchBox.instance.panel.backgroundSprite = "GenericTab";
             }
-        }
-
-        public void MoveItClone(PrefabInfo prefab)
-        {
-            Debugging.Message("MoveItClone called");
-
-            // make a fake move it export xml
-
-            // call move it Import
-            ToolController toolController = UnityEngine.Object.FindObjectOfType<ToolController>();
-            Component moveItTool = toolController.GetComponent("MoveItTool");
-            toolController.CurrentTool = moveItTool as ToolBase;
-            Type MoveItToolType = Type.GetType("MoveIt.MoveItTool");
-
-            MethodInfo ImportMI = MoveItToolType.GetMethod("Import", new Type[] { typeof(string)});
-            if (ImportMI == null) Debugging.Message("Import is null");
-            ImportMI.Invoke(moveItTool, new object[] { "FindIt2FakeMoveItExport" });
-
-            // delete fake move it export xml
-
-
-            Debugging.Message("MoveItClone returned");
         }
     }
 

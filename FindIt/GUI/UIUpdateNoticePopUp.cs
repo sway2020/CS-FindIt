@@ -18,6 +18,7 @@ namespace FindIt.GUI
             atlas = SamsamTS.UIUtils.GetAtlas("Ingame");
             backgroundSprite = "GenericPanelWhite";
             size = new Vector2(660, 100);
+            relativePosition += new Vector3(-200, -200);
 
             UILabel title = AddUIComponent<UILabel>();
             title.text = "Find It! " + (ModInfo.isBeta ? "[BETA] " : "") + ModInfo.version + " " + Translations.Translate("FIF_UPN_UP");
