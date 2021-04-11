@@ -2,8 +2,6 @@
 // https://github.com/SamsamTS/CS-FindIt
 
 using System.Linq;
-using System.Text.RegularExpressions;
-using System.Globalization;
 using System.Collections.Generic;
 using UnityEngine;
 using ColossalFramework;
@@ -18,13 +16,6 @@ namespace FindIt
     public class Asset
     {
         private PrefabInfo m_prefab;
-
-        // public static Shader shaderDefault = Shader.Find("Custom/Props/Decal/Default");
-        public static Shader shaderBlend = Shader.Find("Custom/Props/Decal/Blend");
-        public static Shader shaderSolid = Shader.Find("Custom/Props/Decal/Solid");
-        // public static Shader shaderFence = Shader.Find("Custom/Props/Decal/Fence");
-
-        private static Shader propFenceShader = Shader.Find("Custom/Props/Prop/Fence");
 
         public enum AssetType
         {
@@ -143,7 +134,7 @@ namespace FindIt
 
                             if (propPrefab.m_material != null)
                         {
-                            if (propPrefab.m_material.shader == shaderBlend || propPrefab.m_material.shader == shaderSolid)
+                            if (propPrefab.m_material.shader == AssetTagList.shaderBlend || propPrefab.m_material.shader == AssetTagList.shaderSolid)
                             {
                                 assetType = AssetType.Decal;
                             }
@@ -530,6 +521,9 @@ namespace FindIt
                 else findIt2Description += Translations.Translate("FIF_PROP_UNS");
 
                 findIt2Description += $", {size.x}x{size.y}, {(int)buildingHeight} {Translations.Translate("FIF_EF_MET")} ({(int)(buildingHeight * 3.28084f)} {Translations.Translate("FIF_EF_FEE")})";
+                BuildingInfo buildingInfo = m_prefab as BuildingInfo;
+                // terrain conforming?
+                if (buildingInfo.m_material?.shader == AssetTagList.shaderBuildingFence) findIt2Description += $", {Translations.Translate("FIF_PROP_TC")}";
             }
             else if (assetType == AssetType.Prop)
             {
@@ -553,8 +547,7 @@ namespace FindIt
 
                 PropInfo propInfo = m_prefab as PropInfo;
                 // terrain conforming?
-                if (propInfo.m_material?.shader == propFenceShader) findIt2Description += $", {Translations.Translate("FIF_PROP_TC")}";
-                else findIt2Description += $", {Translations.Translate("FIF_PROP_NTC")}";
+                if (propInfo.m_material?.shader == AssetTagList.shaderPropFence) findIt2Description += $", {Translations.Translate("FIF_PROP_TC")}";
             }
             else if (assetType == AssetType.Tree)
             {
@@ -587,6 +580,9 @@ namespace FindIt
                 else findIt2Description += Translations.Translate("FIF_PROP_UNS");
 
                 findIt2Description += $", {size.x}x{size.y}, {(int)buildingHeight} {Translations.Translate("FIF_EF_MET")} ({(int)(buildingHeight * 3.28084f)} {Translations.Translate("FIF_EF_FEE")})";
+                BuildingInfo buildingInfo = m_prefab as BuildingInfo;
+                // terrain conforming?
+                if (buildingInfo.m_material?.shader == AssetTagList.shaderBuildingFence) findIt2Description += $", {Translations.Translate("FIF_PROP_TC")}";
             }
 
             findIt2Description += "\n";

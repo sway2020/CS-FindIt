@@ -143,7 +143,7 @@ namespace FindIt.GUI
             Light gameMainLight = RenderManager.instance.MainLight;
 
             // Set exposure and sky tint for render.
-            DayNightProperties.instance.m_Exposure = 0.5f;
+            DayNightProperties.instance.m_Exposure = 0.75f;
             DayNightProperties.instance.m_SkyTint = new Color(0, 0, 0);
             DayNightProperties.instance.Refresh();
 

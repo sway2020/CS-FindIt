@@ -20,7 +20,7 @@ namespace FindIt.GUI
             // Debugging.Message("Generated thumbnails variants for: " + prefab.name);
         }
 
-        public static void FixThumbnails(PrefabInfo prefab, UIButton button)
+        public static void FixThumbnails(PrefabInfo prefab, UIButton button, Asset asset = null)
         {
             // Fixing thumbnails
             if (prefab.m_Atlas == null || prefab.m_Thumbnail.IsNullOrWhiteSpace() ||
@@ -79,6 +79,16 @@ namespace FindIt.GUI
                     button.pressedFgSprite = prefab.m_Thumbnail + "Pressed";
                     button.disabledFgSprite = prefab.m_Thumbnail + "Disabled";
                     button.focusedFgSprite = null;
+                }
+            }
+
+            // Requested custom thumbnails
+            if (asset != null && (prefab.m_Atlas != null) && !(prefab is NetInfo))
+            {
+                if (asset.tagsCustom.Contains("bad_thumbnail"))
+                {
+                    ThumbnailManager.MakeThumbnail(prefab, button);
+                    return;
                 }
             }
         }

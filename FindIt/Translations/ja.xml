@@ -71,7 +71,7 @@
     <Translation ID="FIF_PROP_UNS" String="未分類" />
     <Translation ID="FIF_SET_KS" String="ホットキー" />
     <Translation ID="FIF_SE_IGR" String="Grwb/RICO" />
-    <Translation ID="FIF_SET_CTFL" String="フォルダを開く" />
+    <Translation ID="FIF_SET_CTFL" String="カスタムタグ保存ファイル (このファイルをバックアップしてください)" />
     <Translation ID="FIF_SET_CTFOP" String="フォルダを表示" />
     <Translation ID="FIF_SE_SCTP" String="カスタムタグパネルを表示" />
     <Translation ID="FIF_POP_SCR" String="マウスホイールを使用して上下にスクロール" />
@@ -152,7 +152,7 @@
     <Translation ID="FIF_SET_PM" String="ゲームモードでエディターマーカーのプロップを表示" />
     <Translation ID="FIF_SET_PMTP" String="これらのプロップは目に見えず、ほとんどのゲームモードでは動作しません。削除するには、Move It を使用します。" />
     <Translation ID="FIF_SET_IC" String="各アセットの既存のインスタンスの数を表示します" />
-    <Translation ID="FIF_EF_UN" String="未使用アセット" />
+    <Translation ID="FIF_EF_UN" String="未使用のアセット" />
     <Translation ID="FIF_QM_TIT" String="クイックメニュー" />
     <Translation ID="FIF_UIS_UN" String="未使用" />
     <Translation ID="FIF_UIS_IN" String="使用中" />
@@ -188,6 +188,12 @@
     <Translation ID="FIF_SET_SSK" String="アセットタイプごとに別々の検索クエリキーワードを使用する" />
     <Translation ID="FIF_TAG_SA" String="すべて選択" />
     <Translation ID="FIF_TAG_SATP" String="検索されたすべてのアセットを選択" />
+    <Translation ID="FIF_EF_LC" String="ローカルカスタム" />
+    <Translation ID="FIF_EF_WC" String="ワークショップ" />
+    <Translation ID="FIF_EF_DLC" String="DLC/CCP が必要" />
+    <Translation ID="FIF_LOC_TOOL" String="選択したアセットの次のインスタンスを見つけるためにクリックします。SHIFT キーを押しながらクリックすると、次の PO インスタンスが見つかります。" />
+    <Translation ID="FIF_REF_DIS" String="アセットの既存のインスタンスの数を更新" />
+    <Translation ID="FIF_EF_US" String="使用中のアセット" />
 
   </Translations>
 </Language>

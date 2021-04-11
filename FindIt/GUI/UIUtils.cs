@@ -172,6 +172,8 @@ namespace SamsamTS
             thumbSprite.width = thumbSprite.parent.width - 8;
             thumbSprite.spriteName = "ScrollbarThumb";
             dropDown.listScrollbar.thumbObject = thumbSprite;
+
+            dropDown.listScrollbar.transform.localScale = dropDown.transform.localScale;
         }
 
         public static void DestroyDropDownScrollBar(UIDropDown dropDown)

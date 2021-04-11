@@ -58,6 +58,22 @@ namespace FindIt.GUI
             {
                 DestroyScrollbars(parent);
             }
+
+            // adjust scrollbars in dropdown menus(needed for Yet Another Toolbar & Resize It)
+            if (UIFilterExtra.instance != null)
+            {
+                SamsamTS.UIUtils.DestroyDropDownScrollBar(UIFilterExtra.instance.optionDropDownMenu);
+                SamsamTS.UIUtils.CreateDropDownScrollBar(UIFilterExtra.instance.optionDropDownMenu);
+                SamsamTS.UIUtils.DestroyDropDownScrollBar(UIFilterExtra.instance.assetCreatorDropDownMenu);
+                SamsamTS.UIUtils.CreateDropDownScrollBar(UIFilterExtra.instance.assetCreatorDropDownMenu);
+                SamsamTS.UIUtils.DestroyDropDownScrollBar(UIFilterExtra.instance.DLCDropDownMenu);
+                SamsamTS.UIUtils.CreateDropDownScrollBar(UIFilterExtra.instance.DLCDropDownMenu);
+            }
+            if (UIFilterTag.instance != null)
+            {
+                SamsamTS.UIUtils.DestroyDropDownScrollBar(UIFilterTag.instance.tagDropDownMenu);
+                SamsamTS.UIUtils.CreateDropDownScrollBar(UIFilterTag.instance.tagDropDownMenu);
+            }
         }
 
         public static UIScrollPanel Create(UIScrollablePanel oldPanel)
@@ -334,7 +350,7 @@ namespace FindIt.GUI
                     return;
                 }
 
-                ImageUtils.FixThumbnails(prefab, null);
+                ImageUtils.FixThumbnails(prefab, null, data.asset);
 
                 component.atlas = prefab.m_Atlas;
                 component.verticalAlignment = UIVerticalAlignment.Middle;
@@ -433,7 +449,7 @@ namespace FindIt.GUI
                                 if (Settings.includePOinstances && FindIt.isPOEnabled)
                                 {
                                     uint poCount = 0;
-                                    poCount = FindIt.instance.POTool.GetPrefabPOInstanceCount(data.asset.prefab);
+                                    poCount = ProceduralObjectsTool.GetPrefabPOInstanceCount(data.asset.prefab);
                                     m_instanceCountLabel.text = "";
                                     if (count == 0 && poCount == 0)
                                     {
@@ -608,7 +624,7 @@ namespace FindIt.GUI
                 }
             }
         }
-        
+
         private void SetDLCSprite(UISprite sprite, SteamHelper.DLC_BitMask dlc)
         {
             if (dlc == SteamHelper.DLC_BitMask.None) return;
@@ -721,6 +737,6 @@ namespace FindIt.GUI
                 sprite.spriteName = "ToolbarIconHelp";
             }
         }
-        
+
     }
 }

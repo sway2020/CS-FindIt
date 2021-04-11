@@ -169,7 +169,7 @@
     <Translation ID="FIF_NET_PAR" String="允许路边停车" />
     <Translation ID="FIF_NET_NOP" String="禁止路边停车" />
     <Translation ID="FIF_PROP_VEH" String="未分类车辆（由 Tree and Vehicle Props 生成）" />
-    <Translation ID="FIF_PROP_TRE" String="树（由树和车辆道具生成）" />
+    <Translation ID="FIF_PROP_TRE" String="树（由 Tree and Vehicle Props 生成）" />
     <Translation ID="FIF_SET_BACK" String="对主面板使用浅色背景颜色" />
     <Translation ID="FIF_SET_BACKTP" String="更易于查看较暗的资产，但更难看到较亮的资产" />
     <Translation ID="FIF_SET_DUN" String="禁用将来的更新通知" />
@@ -189,6 +189,18 @@
     <Translation ID="FIF_SET_SSKTP" String="切换资产类型时按住 SHIFT 以暂时共享搜索字符串" />
     <Translation ID="FIF_TAG_SA" String="全选" />
     <Translation ID="FIF_TAG_SATP" String="选择全部显示的资产" />
+    <Translation ID="FIF_EF_UNEXP" String="全部导出" />
+    <Translation ID="FIF_EF_UNEXPTP" String="将所有未使用的工坊 ID 的资产列表导出到包含 Steam 链接的 HTML 文件中" />
+    <Translation ID="FIF_EF_UNEXPSE" String="导出搜索" />
+    <Translation ID="FIF_EF_UNEXPTPSE" String="将上次搜索中未使用的工坊 ID 的资产列表导出到包含 Steam 链接的 HTML 文件中" />
+    <Translation ID="FIF_EF_LC" String="本地自制" />
+    <Translation ID="FIF_EF_WC" String="工坊自制" />
+    <Translation ID="FIF_EF_DLC" String="需要 DLC/CCP" />
+    <Translation ID="FIF_LOC_TOOL" String="单击以定位所选资产的下一个实例。按住SHIFT键并单击以定位下一个PO实例。" />
+    <Translation ID="FIF_REF_DIS" String="刷新显示" />
+    <Translation ID="FIF_EF_US" String="使用中资产" />
+    <Translation ID="FIF_EF_USEXPTP" String="将所有使用中的工坊 ID 的资产列表导出到包含 Steam 链接的 HTML 文件中" />
+    <Translation ID="FIF_EF_USEXPTPSE" String="将上次搜索中使用中的工坊 ID 的资产列表导出到包含 Steam 链接的 HTML 文件中" />
 
   </Translations>
 </Language>

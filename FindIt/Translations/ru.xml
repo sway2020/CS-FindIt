@@ -12,63 +12,63 @@
     <Translation ID="FIF_SET_BPTP" String="Remove all props causing issue. Check the option and load your save" />
     <Translation ID="FIF_SE_WF" String="Custom" />
     <Translation ID="FIF_SE_VF" String="Vanilla" />
-    <Translation ID="FIF_SE_IA" String="All" />
+    <Translation ID="FIF_SE_IA" String="Все" />
     <Translation ID="FIF_SE_IN" String="Network" />
     <Translation ID="FIF_SE_IP" String="Ploppable" />
     <Translation ID="FIF_SE_IG" String="Growable" />
     <Translation ID="FIF_SE_IR" String="RICO" />
     <Translation ID="FIF_SE_IPR" String="Prop" />
-    <Translation ID="FIF_SE_ID" String="Decal" />
-    <Translation ID="FIF_SE_IT" String="Tree" />
+    <Translation ID="FIF_SE_ID" String="Декаль" />
+    <Translation ID="FIF_SE_IT" String="Дерево" />
     <Translation ID="FIF_SE_LV" String="Уровень здания" />
-    <Translation ID="FIF_SE_SZ" String="Size: " />
+    <Translation ID="FIF_SE_SZ" String="Размер: " />
     <Translation ID="FIF_SE_SC" String="Зажмите SHIFT или CTRL чтобы выбрать несколько категорий" />
-    <Translation ID="FIF_PLOP_E" String="Electricity" />
-    <Translation ID="FIF_PLOP_W" String="Water/Sewage" />
-    <Translation ID="FIF_PLOP_G" String="Garbage" />
-    <Translation ID="FIF_PLOP_H" String="Healthcare" />
-    <Translation ID="FIF_PLOP_F" String="Fire Department" />
-    <Translation ID="FIF_PLOP_P" String="Police" />
-    <Translation ID="FIF_PLOP_ED" String="Education" />
-    <Translation ID="FIF_PLOP_PT" String="Public Transportation" />
-    <Translation ID="FIF_PLOP_PPW" String="Park/Plaza/Wildlife" />
-    <Translation ID="FIF_PLOP_U" String="Unique Buildings" />
-    <Translation ID="FIF_PLOP_I" String="Industry" />
-    <Translation ID="FIF_PLOP_D" String="Disaster" />
-    <Translation ID="FIF_PLOP_C" String="Campus" />
-    <Translation ID="FIF_PLOP_V" String="Varsity Sports" />
-    <Translation ID="FIF_PLOP_FI" String="Fishing" />
-    <Translation ID="FIF_GR_LDR" String="Low Density Residential" />
-    <Translation ID="FIF_GR_HDR" String="High Density Residential" />
-    <Translation ID="FIF_GR_LDRE" String="Low Density Residential ECO" />
-    <Translation ID="FIF_GR_HDRE" String="High Density Residential ECO" />
-    <Translation ID="FIF_GR_LDC" String="Low Density Commercial" />
-    <Translation ID="FIF_GR_HDC" String="High Density Commercial" />
-    <Translation ID="FIF_GR_CE" String="Commercial ECO" />
-    <Translation ID="FIF_GR_O" String="Office" />
+    <Translation ID="FIF_PLOP_E" String="Электричество" />
+    <Translation ID="FIF_PLOP_W" String="Вода/Канализация " />
+    <Translation ID="FIF_PLOP_G" String="Мусор" />
+    <Translation ID="FIF_PLOP_H" String="Здравоохранение" />
+    <Translation ID="FIF_PLOP_F" String="Пожарная часть" />
+    <Translation ID="FIF_PLOP_P" String="Полиция" />
+    <Translation ID="FIF_PLOP_ED" String="Образование" />
+    <Translation ID="FIF_PLOP_PT" String="Общественный транспорт" />
+    <Translation ID="FIF_PLOP_PPW" String="Парк/Площадь/Живая природа" />
+    <Translation ID="FIF_PLOP_U" String="Уникальные постройки" />
+    <Translation ID="FIF_PLOP_I" String="Промышленность" />
+    <Translation ID="FIF_PLOP_D" String="МЧС" />
+    <Translation ID="FIF_PLOP_C" String="Кампус" />
+    <Translation ID="FIF_PLOP_V" String="Университетский спорт" />
+    <Translation ID="FIF_PLOP_FI" String="Рыбная ловля" />
+    <Translation ID="FIF_GR_LDR" String="Жильё низ. плотности" />
+    <Translation ID="FIF_GR_HDR" String="Жильё выс. плотности" />
+    <Translation ID="FIF_GR_LDRE" String="Экодома низ. плотности" />
+    <Translation ID="FIF_GR_HDRE" String="Экодома выс. плотности" />
+    <Translation ID="FIF_GR_LDC" String="Коммерция низ. плотности" />
+    <Translation ID="FIF_GR_HDC" String="Коммерция выс. плотности" />
+    <Translation ID="FIF_GR_CE" String="Экокоммерция" />
+    <Translation ID="FIF_GR_O" String="Офис" />
     <Translation ID="FIF_GR_ITC" String="IT Cluster" />
     <Translation ID="FIF_GR_GI" String="Generic Industry" />
-    <Translation ID="FIF_GR_FAI" String="Farming Industry" />
-    <Translation ID="FIF_GR_FOI" String="Forest Industry" />
-    <Translation ID="FIF_GR_OII" String="Oil Industry" />
-    <Translation ID="FIF_GR_ORI" String="Ore Industry" />
-    <Translation ID="FIF_GR_LC" String="Leisure Commercial" />
-    <Translation ID="FIF_GR_TC" String="Tourism Commercial" />
+    <Translation ID="FIF_GR_FAI" String="Сельское хозяйство" />
+    <Translation ID="FIF_GR_FOI" String="Лесная промышленность" />
+    <Translation ID="FIF_GR_OII" String="Нефтяная промышленность" />
+    <Translation ID="FIF_GR_ORI" String="Добывающая промышленность" />
+    <Translation ID="FIF_GR_LC" String="Развлечения" />
+    <Translation ID="FIF_GR_TC" String="Коммерческий туризм" />
     <Translation ID="FIF_SO_RETP" String="Сортировать по релевантности. Как в оригинальном Find It!" />
     <Translation ID="FIF_SO_NETP" String="Сортировать по последним загруженным" />
     <Translation ID="FIF_SO_RE" String="Relevance" />
-    <Translation ID="FIF_SO_NE" String="Recent DLs" />
+    <Translation ID="FIF_SO_NE" String="Нов. загр." />
     <Translation ID="TRN_CHOICE" String="Установить язык (применится при следующей загрузке)" />
     <Translation ID="TRN_SYS" String="Использовать язык ОС" />
-    <Translation ID="FIF_PROP_IND" String="Industrial" />
-    <Translation ID="FIF_PROP_PAR" String="Parks" />
-    <Translation ID="FIF_PROP_COM" String="Common" />
-    <Translation ID="FIF_PROP_RES" String="Residential" />
-    <Translation ID="FIF_PROP_BIL" String="Billboards" />
-    <Translation ID="FIF_PROP_SPE" String="Special Billboards" />
-    <Translation ID="FIF_PROP_LIG" String="Lights" />
-    <Translation ID="FIF_PROP_NAT" String="Natural" />
-    <Translation ID="FIF_PROP_UNS" String="Unsorted" />
+    <Translation ID="FIF_PROP_IND" String="Промышленность" />
+    <Translation ID="FIF_PROP_PAR" String="Парки" />
+    <Translation ID="FIF_PROP_COM" String="Без специализации" />
+    <Translation ID="FIF_PROP_RES" String="Жилые" />
+    <Translation ID="FIF_PROP_BIL" String="Рекламные щиты" />
+    <Translation ID="FIF_PROP_SPE" String="Спец. рекламные щиты" />
+    <Translation ID="FIF_PROP_LIG" String="Освещение" />
+    <Translation ID="FIF_PROP_NAT" String="Природа" />
+    <Translation ID="FIF_PROP_UNS" String="Несортированные" />
     <Translation ID="FIF_SET_KS" String="Сочетание клавиш" />
     <Translation ID="FIF_SE_IGR" String="Grow.RICO" />
     <Translation ID="FIF_SET_CTFL" String="Распол. файла пользовательских тегов. Создавайте резервные копии файла!" />
@@ -110,9 +110,9 @@
     <Translation ID="FIF_TAG_DEL" String="Delete" />
     <Translation ID="FIF_TAG_DELTP" String="Удалить этот тег" />
     <Translation ID="FIF_UIS_WS" String="Щелкните правой кнопкой мыши, чтобы просмотреть этот объект в Steam Workshop" />
-    <Translation ID="FIF_TREE_SM" String="Small Trees" />
-    <Translation ID="FIF_TREE_MD" String="Medium Trees" />
-    <Translation ID="FIF_TREE_LG" String="Large Trees" />
+    <Translation ID="FIF_TREE_SM" String="Маленькие деревья" />
+    <Translation ID="FIF_TREE_MD" String="Средние деревья" />
+    <Translation ID="FIF_TREE_LG" String="Большие деревья" />
     <Translation ID="FIF_TAG_BAT" String="Batch" />
     <Translation ID="FIF_TAG_BAC" String="Назад" />
     <Translation ID="FIF_TAG_ADD" String="Добавить" />
@@ -138,19 +138,19 @@
     <Translation ID="FIF_EF_FEE" String="футов" />
     <Translation ID="FIF_SET_ACLS" String="Сортировать список создателей активов по алфавиту" />
     <Translation ID="FIF_GR_RAN" String="Случайный выбор" />
-    <Translation ID="FIF_NET_SMR" String="Small Roads" />
-    <Translation ID="FIF_NET_MDR" String="Medium Roads" />
-    <Translation ID="FIF_NET_LGR" String="Large Roads" />
-    <Translation ID="FIF_NET_HGHW" String="Highways" />
-    <Translation ID="FIF_NET_PATH" String="Paths" />
-    <Translation ID="FIF_NET_WALL" String="Wall and Fences" />
-    <Translation ID="FIF_NET_WAT" String="Water Structures" />
-    <Translation ID="FIF_PROP_MAR" String="Editor Markers" />
-    <Translation ID="FIF_NET_TNR" String="Tiny Roads" />
+    <Translation ID="FIF_NET_SMR" String="Узкие улицы" />
+    <Translation ID="FIF_NET_MDR" String="Средние улицы" />
+    <Translation ID="FIF_NET_LGR" String="Широкие улицы" />
+    <Translation ID="FIF_NET_HGHW" String="Шоссе" />
+    <Translation ID="FIF_NET_PATH" String="Тропинки" />
+    <Translation ID="FIF_NET_WALL" String="Стены и заборы" />
+    <Translation ID="FIF_NET_WAT" String="Водные конструкции" />
+    <Translation ID="FIF_PROP_MAR" String="Маркеры редактора " />
+    <Translation ID="FIF_NET_TNR" String="Крошечные дороги" />
     <Translation ID="FIF_NET_UTI" String="Utility" />
-    <Translation ID="FIF_NET_TRA" String="Train" />
+    <Translation ID="FIF_NET_TRA" String="Поезд" />
     <Translation ID="FIF_SET_PM" String="Show marker type props in game mode(restart needed)" />
-    <Translation ID="FIF_SET_PMTP" String="Most marker type props can only be removed by the Better Bulldozer mod in game mode. Use with caution" />
+    <Translation ID="FIF_SET_PMTP" String="Marker type props are invisible and most don't work in game mode. Use Move It to delete them." />
     <Translation ID="FIF_SET_IC" String="Показать кол-во размещённых экземпляров объекта" />
     <Translation ID="FIF_EF_UN" String="Неиспользуем. объекты" />
     <Translation ID="FIF_QM_TIT" String="Дополнительные фильтры сортировки" />
@@ -174,7 +174,7 @@
     <Translation ID="FIF_SET_BACKTP" String="Легче увидеть более тёмные объекты, но труднее увидеть более яркие" />
     <Translation ID="FIF_SET_DUN" String="Отключить уведомление об обновлении" />
     <Translation ID="FIF_PROP_MOT" String="Автотранспорт (сгенерированный Tree and Vehicle Props)" />
-    <Translation ID="FIF_PROP_RAI" String="ж/д транспорт (сгенерированный Tree and Vehicle Props)" />
+    <Translation ID="FIF_PROP_RAI" String="Ж/д транспорт (сгенерированный Tree and Vehicle Props)" />
     <Translation ID="FIF_PROP_AIR" String="Авиатранспорт (сгенерированный Tree and Vehicle Props)" />
     <Translation ID="FIF_PROP_WAT" String="Водный транспорт (сгенерированный Tree and Vehicle Props)" />
     <Translation ID="FIF_EF_SB" String="Sub-buildings" />
@@ -187,6 +187,20 @@
     <Translation ID="FIF_PROP_NTC" String="Non-Terrain Conforming" />
     <Translation ID="FIF_SET_SSK" String="Используйте отд. слова поискового запроса для каждого типа активов" />
     <Translation ID="FIF_SET_SSKTP" String="Удерживайте SHIFT при переключении типа актива, чтобы временно использовать ключевое слово запроса" />
+    <Translation ID="FIF_TAG_SA" String="Выбрать все" />
+    <Translation ID="FIF_TAG_SATP" String="Выбрать все отображаемые элементы" />
+    <Translation ID="FIF_EF_UNEXP" String="Экспорт" />
+    <Translation ID="FIF_EF_UNEXPTP" String="Экспорт списка ID неиспользуемых объектов в HTML-файл со ссылками на Мастерскую" />
+    <Translation ID="FIF_EF_UNEXPSE" String="Экспорт поиска" />
+    <Translation ID="FIF_EF_UNEXPTPSE" String="Экспорт списка ID неиспользуемых объектов из последнего поиска в файл HTML со ссылками на Мастерскую" />
+    <Translation ID="FIF_EF_LC" String="Объекты не из Мастерской" />
+    <Translation ID="FIF_EF_WC" String="Объекты из Мастерской" />
+    <Translation ID="FIF_EF_DLC" String="Необходимые DLC/CCP" />
+    <Translation ID="FIF_LOC_TOOL" String="Щелкните, чтобы найти следующий экземпляр выбранного актива. Удерживая SHIFT нажатым, щелкните, чтобы найти следующий экземпляр PO." />
+    <Translation ID="FIF_REF_DIS" String="Обновить дисплей" />
+    <Translation ID="FIF_EF_US" String="Используемые объекты" />
+    <Translation ID="FIF_EF_USEXPTP" String="Экспорт списка всех используемых ID в HTML-файл со ссылками на Мастерскую" />
+    <Translation ID="FIF_EF_USEXPTPSE" String="Экспорт списка используемых ID из последнего поиска в файл HTML со ссылками на Мастерскую" />
  
   </Translations>
 </Language>

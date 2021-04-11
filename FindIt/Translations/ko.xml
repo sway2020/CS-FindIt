@@ -67,7 +67,7 @@
     <Translation ID="FIF_PROP_BIL" String="간판" />
     <Translation ID="FIF_PROP_SPE" String="특수 간판" />
     <Translation ID="FIF_PROP_LIG" String="조명" />
-    <Translation ID="FIF_PROP_NAT" String="자연스러운" />
+    <Translation ID="FIF_PROP_NAT" String="자연" />
     <Translation ID="FIF_PROP_UNS" String="미분류소품" />
     <Translation ID="FIF_SET_KS" String="단축키" />
     <Translation ID="FIF_SE_IGR" String="Grwb/RICO" />
@@ -136,8 +136,63 @@
     <Translation ID="FIF_EF_BH" String="건물 높이" />
     <Translation ID="FIF_EF_MET" String="미터" />
     <Translation ID="FIF_EF_FEE" String="피트" />
-    <Translation ID="FIF_SET_ACLS" String="에셋 제작자 목록은 알파벳순으로 정렬" />
+    <Translation ID="FIF_SET_ACLS" String="에셋 제작자 목록을 알파벳순으로 정렬" />
     <Translation ID="FIF_GR_RAN" String="랜덤 선택" />
+    <Translation ID="FIF_NET_SMR" String="소형 도로" />
+    <Translation ID="FIF_NET_MDR" String="중형 도로" />
+    <Translation ID="FIF_NET_LGR" String="대형 도로" />
+    <Translation ID="FIF_NET_HGHW" String="고속도로" />
+    <Translation ID="FIF_NET_PATH" String="길" />
+    <Translation ID="FIF_NET_WALL" String="벽과 울타리" />
+    <Translation ID="FIF_NET_WAT" String="물 구조물" />
+    <Translation ID="FIF_PROP_MAR" String="에디터 마커" />
+    <Translation ID="FIF_NET_TNR" String="작은 도로" />
+    <Translation ID="FIF_NET_UTI" String="전력" />
+    <Translation ID="FIF_NET_TRA" String="기차" />
+    <Translation ID="FIF_SET_PM" String="인게임에서 마커 유형 프롭 표시" />
+    <Translation ID="FIF_SET_PMTP" String="인게임에서 마커 유형 프롭은 보이지 않고 작동하지 않습니다. Move It을 사용해 삭제하세요." />
+    <Translation ID="FIF_SET_IC" String="각 에셋의 존재하는 인스턴스 개수 표시" />
+    <Translation ID="FIF_EF_UN" String="사용되지 않은 에셋" />
+    <Translation ID="FIF_QM_TIT" String="퀵 메뉴" />
+    <Translation ID="FIF_UIS_UN" String="사용되지 않음" />
+    <Translation ID="FIF_UIS_IN" String="사용 중" />
+    <Translation ID="FIF_SET_ICTP" String="이 옵션은 검색 속도를 약간 느려지게 합니다. 필요하지 않은 때는 비활성화하세요." />
+    <Translation ID="FIF_SET_PO" String="Procedural Objects 포함" />
+    <Translation ID="FIF_SET_ICO" String="기존 정렬 옵션 사용" />
+    <Translation ID="FIF_SET_ICUS" String="사용된 에셋을 위에 표시" />
+    <Translation ID="FIF_SET_ICUN" String="사용되지 않은 에셋을 위에 표시" />
+    <Translation ID="FIF_TAG_BATTP" String="일괄 편집" />
+    <Translation ID="FIF_SE_SEBTP" String="검색창 지우기" />
+    <Translation ID="FIF_SET_DB" String="Steam 오버레이 대신 시스템 기본 브라우저 사용" />
+    <Translation ID="FIF_SET_DBTP" String="에셋 섬네일에서 스팀 아이콘을 우클릭하여 Steam 창작마당에서 에셋을 확인하십시오" />
+    <Translation ID="FIF_NET_ONE" String="일방통행 도로" />
+    <Translation ID="FIF_NET_PAR" String="가변 주차 허용" />
+    <Translation ID="FIF_NET_NOP" String="가변 주차 없음" />
+    <Translation ID="FIF_PROP_VEH" String="정렬되지 않은 차량 (Tree and Vehicle Props으로 생성됨)" />
+    <Translation ID="FIF_PROP_TRE" String="나무 (Tree and Vehicle Props으로 생성됨)" />
+    <Translation ID="FIF_SET_BACK" String="메인 패널에 밝은 배경색 사용" />
+    <Translation ID="FIF_SET_BACKTP" String="어두운 에셋을 더 쉽게 볼 수 있지만 밝은 에셋을 보기 어려워집니다" />
+    <Translation ID="FIF_SET_DUN" String="미래 업데이트 알림 사용 안 함" />
+    <Translation ID="FIF_PROP_MOT" String="자동차 (Tree and Vehicle Props으로 생성됨)" />
+    <Translation ID="FIF_PROP_RAI" String="철도차량 (Tree and Vehicle Props으로 생성됨)" />
+    <Translation ID="FIF_PROP_AIR" String="비행기 (Tree and Vehicle Props으로 생성됨)" />
+    <Translation ID="FIF_PROP_WAT" String="선박 (Tree and Vehicle Props으로 생성됨)" />
+    <Translation ID="FIF_EF_SB" String="서브 빌딩" />
+    <Translation ID="FIF_ATP_TP" String="탭 사이의 간격을 클릭하고 드래그하여 이 패널 움직이기" />
+    <Translation ID="FIF_SET_ATP" String="에셋 유형 패널 표시" />
+    <Translation ID="FIF_EF_CT" String="커스텀 태그 포함" />
+    <Translation ID="FIF_EF_NCT" String="커스텀 태그 미포함" />
+    <Translation ID="FIF_UPN_UP" String="업데이트" />
+    <Translation ID="FIF_PROP_TC" String="지형을 따르는" />
+    <Translation ID="FIF_PROP_NTC" String="지형을 따르지 않는" />
+    <Translation ID="FIF_SET_SSK" String="각 에셋 유형에 대해 별도의 검색 쿼리 키워드 사용" />
+    <Translation ID="FIF_SET_SSKTP" String="임시로 쿼리 키워드를 공유하도록 에셋 유형을 전환할 때 SHIFT를 누른 상태로 있으십시오" />
+    <Translation ID="FIF_TAG_SA" String="모두 선택" />
+    <Translation ID="FIF_TAG_SATP" String="표시된 모든 항목 선택" />
+    <Translation ID="FIF_EF_UNEXP" String="모두 내보내기" />
+    <Translation ID="FIF_EF_UNEXPTP" String="사용되지 않는 모든 창작마당 ID 목록을 창작마당 링크가 있는 HTML 파일로 내보내기" />
+    <Translation ID="FIF_EF_UNEXPSE" String="검색된 것 내보내기" />
+    <Translation ID="FIF_EF_UNEXPTPSE" String="마지막 검색에서의 사용되지 않는 창작마당 ID 목록을 창작마당 링크가 있는 HTML 파일로 내보내기" />
 
   </Translations>
 </Language>

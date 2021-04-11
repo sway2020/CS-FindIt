@@ -150,7 +150,7 @@ namespace FindIt
             {
                 // We weren't already primed - set our text and focus the button.
                 button.buttonsMask = (UIMouseButton.Left | UIMouseButton.Right | UIMouseButton.Middle | UIMouseButton.Special0 | UIMouseButton.Special1 | UIMouseButton.Special2 | UIMouseButton.Special3);
-                button.text = "?";
+                button.text = "ESC->cancel. Backspace->delete";
                 button.Focus();
 
                 // Prime for new keybinding entry.

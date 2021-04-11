@@ -189,8 +189,19 @@
     <Translation ID="FIF_SET_SSKTP" String="Hold SHIFT when switching asset type to share query keyword temporarily" />
     <Translation ID="FIF_TAG_SA" String="Select All" />
     <Translation ID="FIF_TAG_SATP" String="Select all displayed items" />
-    <Translation ID="FIF_EF_UNEXP" String="Export" />
-    <Translation ID="FIF_EF_UNEXPTP" String="Export the list of unused workship id's into an HTML file with workshop links" />
+    <Translation ID="FIF_EF_UNEXP" String="Export All" />
+    <Translation ID="FIF_EF_UNEXPTP" String="Export the list of all unused workshop ID's into an HTML file with workshop links" />
+    <Translation ID="FIF_EF_UNEXPSE" String="Export Searched" />
+    <Translation ID="FIF_EF_UNEXPTPSE" String="Export the list of unused workshop ID's from the last search into an HTML file with workshop links" />
+    <Translation ID="FIF_EF_LC" String="Local Custom" />
+    <Translation ID="FIF_EF_WC" String="Workshop Subscription" />
+    <Translation ID="FIF_EF_DLC" String="Require DLC/CCP" />
+    <Translation ID="FIF_LOC_TOOL" String="Click to locate next instance of the selected asset. Hold SHIFT and click to locate the next PO instance." />
+    <Translation ID="FIF_REF_DIS" String="Refresh display" />
+    <Translation ID="FIF_EF_US" String="Used Assets" />
+    <Translation ID="FIF_EF_USEXPTP" String="Export the list of all used workshop ID's into an HTML file with workshop links" />
+    <Translation ID="FIF_EF_USEXPTPSE" String="Export the list of used workshop ID's from the last search into an HTML file with workshop links" />
+    <Translation ID="FIF_SE_SIZEX" String="Click this x to reset the building size filters" />
 
   </Translations>
 </Language>

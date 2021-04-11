@@ -102,6 +102,7 @@ namespace FindIt.GUI
                 }
                 CombineTag(oldTagName, newTagName);
                 ((UIFilterTag)m_button.parent).UpdateCustomTagList();
+                UISearchBox.instance.scrollPanel.Refresh();
                 Close();
             };
 

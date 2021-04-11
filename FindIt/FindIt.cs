@@ -31,7 +31,6 @@ namespace FindIt
         /// Tree & Vehicle Props Patch mod enabled?
         /// </summary>
         public static bool isTVPPatchEnabled = false;
-        public ProceduralObjectsTool POTool;
 
         /// <summary>
         /// Move It mod enabled?
@@ -255,6 +254,7 @@ namespace FindIt
 
                 PrefabInfo prefab = uIButton.objectUserData as PrefabInfo;
                 string key = Asset.GetName(prefab);
+                LocateNextInstanceTool.selectedPrefab = prefab;
                 if (AssetTagList.instance.assets.ContainsKey(key) && AssetTagList.instance.assets[key].onButtonClicked != null)
                 {
                     AssetTagList.instance.assets[key].onButtonClicked(uIButton);
@@ -425,7 +425,9 @@ namespace FindIt
                     "TaxiwayDisabled",
                     "TaxiwayFocused",
                     "TaxiwayHovered",
-                    "TaxiwayPressed"
+                    "TaxiwayPressed",
+                    "Refresh",
+                    "Locate"
                 };
 
                 atlas = ResourceLoader.CreateTextureAtlas("FindItAtlas", spriteNames, "FindIt.Icons.");

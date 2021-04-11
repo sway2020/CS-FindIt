@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Language UniqueName="it" ReadableName="Italiano">
+  <Translations>
+    <Translation ID="FIF_DESC" String="Trova e organizza i tuoi asset" />
+    <Translation ID="FIF_SET_DM" String="Disattiva il registro dei messaggi di debug" />
+    <Translation ID="FIF_SET_DMTP" String="Se attivato, i messaggi di debug non saranno registrati." />
+    <Translation ID="FIF_SET_CMT" String="Centra la barra principale" />
+    <Translation ID="FIF_SET_CMTTP" String="La barra principale sarà centrata se supera una certa lunghezza." />
+    <Translation ID="FIF_SET_UL" String="Sblocca tutto" />
+    <Translation ID="FIF_SET_ULTP" String="Permette di selezionare e posizionare oggetti anche se bloccati." />
+    <Translation ID="FIF_SET_BP" String="Sistema oggetti danneggati al prossimo caricamento" />
+    <Translation ID="FIF_SET_BPTP" String="Rimuovi tutti gli oggetti problematici. Attiva l'opzione e ricarica il salvataggio." />
+    <Translation ID="FIF_SE_WF" String="Custom" />
+    <Translation ID="FIF_SE_VF" String="Vanilla" />
+    <Translation ID="FIF_SE_IA" String="Tutto" />
+    <Translation ID="FIF_SE_IN" String="Network" />
+    <Translation ID="FIF_SE_IP" String="Ploppable" />
+    <Translation ID="FIF_SE_IG" String="Growable" />
+    <Translation ID="FIF_SE_IR" String="RICO" />
+    <Translation ID="FIF_SE_IPR" String="Prop" />
+    <Translation ID="FIF_SE_ID" String="Decal" />
+    <Translation ID="FIF_SE_IT" String="Albero" />
+    <Translation ID="FIF_SE_LV" String="Livello Edificio" />
+    <Translation ID="FIF_SE_SZ" String="Size:" />
+    <Translation ID="FIF_SE_SC" String="Premi SHIFT o CTRL per selezionare più categorie" />
+    <Translation ID="FIF_PLOP_E" String="Elettricità" />
+    <Translation ID="FIF_PLOP_W" String="Acqua/Fognature" />
+    <Translation ID="FIF_PLOP_G" String="Rifiuti" />
+    <Translation ID="FIF_PLOP_H" String="Salute" />
+    <Translation ID="FIF_PLOP_F" String="Pompieri" />
+    <Translation ID="FIF_PLOP_P" String="Polizia" />
+    <Translation ID="FIF_PLOP_ED" String="Educazione" />
+    <Translation ID="FIF_PLOP_PT" String="Trasporti Pubblici" />
+    <Translation ID="FIF_PLOP_PPW" String="Parchi/Piazze/Fauna" />
+    <Translation ID="FIF_PLOP_U" String="Edifici Unici" />
+    <Translation ID="FIF_PLOP_I" String="Industria" />
+    <Translation ID="FIF_PLOP_D" String="Disastri" />
+    <Translation ID="FIF_PLOP_C" String="Campus" />
+    <Translation ID="FIF_PLOP_V" String="Sport Universitari" />
+    <Translation ID="FIF_PLOP_FI" String="Pesca" />
+    <Translation ID="FIF_GR_LDR" String="Residenziale Bassa Densità" />
+    <Translation ID="FIF_GR_HDR" String="Residenziale Alta Densità" />
+    <Translation ID="FIF_GR_LDRE" String="Residenziale Bassa Densità ECO" />
+    <Translation ID="FIF_GR_HDRE" String="Residenziale Alta Densità ECO" />
+    <Translation ID="FIF_GR_LDC" String="Commerciale Bassa Densità" />
+    <Translation ID="FIF_GR_HDC" String="Commerciale Alta Densità" />
+    <Translation ID="FIF_GR_CE" String="Commerciale ECO" />
+    <Translation ID="FIF_GR_O" String="Uffici" />
+    <Translation ID="FIF_GR_ITC" String="Cluster Tecnologici" />
+    <Translation ID="FIF_GR_GI" String="Industria Generica" />
+    <Translation ID="FIF_GR_FAI" String="Industria Agricola" />
+    <Translation ID="FIF_GR_FOI" String="Industria Forestale" />
+    <Translation ID="FIF_GR_OII" String="Industria Petrolifera" />
+    <Translation ID="FIF_GR_ORI" String="Industria Mineraria" />
+    <Translation ID="FIF_GR_LC" String="Commerciale Ricreativo" />
+    <Translation ID="FIF_GR_TC" String="Commerciale Turismo" />
+    <Translation ID="FIF_SO_RETP" String="Elenca per Rilevanza. Come nel Find It originale" />
+    <Translation ID="FIF_SO_NETP" String="Elenca per Download più recente" />
+    <Translation ID="FIF_SO_RE" String="Rilevanza" />
+    <Translation ID="FIF_SO_NE" String="Recente DLs" />
+    <Translation ID="TRN_CHOICE" String="Seleziona lingua (attivo alla prossima partita)" />
+    <Translation ID="TRN_SYS" String="Usa lingua di sistema" />
+    <Translation ID="FIF_PROP_IND" String="Industriale" />
+    <Translation ID="FIF_PROP_PAR" String="Parchi" />
+    <Translation ID="FIF_PROP_COM" String="Comune" />
+    <Translation ID="FIF_PROP_RES" String="Residenziale" />
+    <Translation ID="FIF_PROP_BIL" String="Cartelloni" />
+    <Translation ID="FIF_PROP_SPE" String="Cartelloni Speciali" />
+    <Translation ID="FIF_PROP_LIG" String="Luci" />
+    <Translation ID="FIF_PROP_NAT" String="Naturale" />
+    <Translation ID="FIF_PROP_UNS" String="Altro" />
+    <Translation ID="FIF_SET_KS" String="Scorciatoie da tastiera" />
+    <Translation ID="FIF_SE_IGR" String="Grwb/RICO" />
+    <Translation ID="FIF_SET_CTFL" String="Posizione dei file delle etichette personalizzate (Ricorda di eseguire spesso il backup)" />
+    <Translation ID="FIF_SET_CTFOP" String="Mostra nel File Explorer" />
+    <Translation ID="FIF_SE_SCTP" String="Mostra pannello delle etichette" />
+    <Translation ID="FIF_POP_SCR" String="Usa la rotella del mouse per salire/scendere" />
+    <Translation ID="FIF_POP_CON" String="Conferma" />
+    <Translation ID="FIF_POP_CAN" String="Cancella" />
+    <Translation ID="FIF_POP_NU" String="Questo non può essere annullato" />
+    <Translation ID="FIF_CO_TIT" String="Unisci" />
+    <Translation ID="FIF_CO_MSG" String="Scegli una etichetta esistente da unire" />
+    <Translation ID="FIF_CO_CH" String="Scegli" />
+    <Translation ID="FIF_CO_CHTP" String="Unisci con etichetta esistente" />
+    <Translation ID="FIF_CO_CHLBL" String="Unisci con:" />
+    <Translation ID="FIF_CO_NELBL" String="Scegli una etichetta esistente" />
+    <Translation ID="FIF_DE_TIT" String="Cancella" />
+    <Translation ID="FIF_DE_MSG" String="Sei sicuro di voler cancellare questa etichetta?" />
+    <Translation ID="FIF_RE_TIT" String="Rinomina" />
+    <Translation ID="FIF_RE_MSG" String="Scrivi un nuovo nome di etichetta e premi Invio." />
+    <Translation ID="FIF_RE_ITP" String="Premi Invio per aggiungere un nuovo nome di etichetta" />
+    <Translation ID="FIF_RE_ELBL" String="Scrivi un nuovo nome di etichetta" />
+    <Translation ID="FIF_RE_NEWLBL" String="Nuovo nome di etichetta:" />
+    <Translation ID="FIF_RE_SLBL" String="Il nome di questa etichetta è troppo corto" />
+    <Translation ID="FIF_RE_AELBL" String="Questa etichetta esiste già" />
+    <Translation ID="FIF_CT_TIT" String="Etichette Personalizzate" />
+    <Translation ID="FIF_CT_DDMSG" String="Aggiungi etichetta esistente a questo asset:" />
+    <Translation ID="FIF_CT_DDTP" String="Aggiungi etichetta esistente a questo asset" />
+    <Translation ID="FIF_CT_ILBL1" String="O" />
+    <Translation ID="FIF_CT_ILBL2" String="Scrivi il nuovo nome dell'etichetta e premi Invio:" />
+    <Translation ID="FIF_CT_ITP" String="Premi invio per aggiungere nuova/e etichetta/e" />
+    <Translation ID="FIF_SET_CTLS" String="Ordina la lista delle etichette personalizzate alfabeticamente" />
+    <Translation ID="FIF_TAG_DDTP" String="Mostra solo gli asset con questa etichetta" />
+    <Translation ID="FIF_TAG_REF" String="Ricarica" />
+    <Translation ID="FIF_TAG_REFTP" String="Ricarica il menù a tendina delle etichette personalizzate" />
+    <Translation ID="FIF_TAG_REN" String="Rinomina" />
+    <Translation ID="FIF_TAG_RENTP" String="Rinomina l'etichetta" />
+    <Translation ID="FIF_TAG_COM" String="Unisci" />
+    <Translation ID="FIF_TAG_COMTP" String="Unisci questa etichetta con un'altra" />
+    <Translation ID="FIF_TAG_DEL" String="Cancella" />
+    <Translation ID="FIF_TAG_DELTP" String="Cancella questa etichetta" />
+    <Translation ID="FIF_UIS_WS" String="Click destro per vedere l'asset nel Workshop di Steam" />
+    <Translation ID="FIF_TREE_SM" String="Alberi Piccoli" />
+    <Translation ID="FIF_TREE_MD" String="Alberi Medi" />
+    <Translation ID="FIF_TREE_LG" String="Alberi Grandi" />
+    <Translation ID="FIF_TAG_BAT" String="Gruppo" />
+    <Translation ID="FIF_TAG_BAC" String="Indietro" />
+    <Translation ID="FIF_TAG_ADD" String="Aggiungi" />
+    <Translation ID="FIF_TAG_ADDTP" String="Aggiungi etichetta agli asset selezionati" />
+    <Translation ID="FIF_TAG_REM" String="Rimuovi" />
+    <Translation ID="FIF_TAG_REMTP" String="Rimuovi etichetta dagli asset selezionati" />
+    <Translation ID="FIF_TAG_CLE" String="Libera" />
+    <Translation ID="FIF_TAG_CLETP" String="Libera la selezione" />
+    <Translation ID="FIF_ADD_TIT" String="Aggiungi in Gruppo" />
+    <Translation ID="FIF_ADD_NUM" String="Numero di asset selezionati:" />
+    <Translation ID="FIF_ADD_ADD" String="Aggiungi etichetta esistente agli asset selezionati" />
+    <Translation ID="FIF_ADD_CHTP" String="Aggiungi etichetta esistente" />
+    <Translation ID="FIF_ADD_TAG" String="Etichetta:" />
+    <Translation ID="FIF_ADD_ELBL" String="Insericsi una nuova etichetta" />
+    <Translation ID="FIF_REM_TIT" String="Rimuovi in Gruppo" />
+    <Translation ID="FIF_REM_REM" String="Rimuovi una etichetta dagli asset selezionati:" />
+    <Translation ID="FIF_REM_CHTP" String="Rimuovi questa etichetta" />
+    <Translation ID="FIF_REM_ELBL" String="Scegli una etichetta" />
+    <Translation ID="FIF_SE_EFI" String="Mostra altri panneli per filtri" />
+    <Translation ID="FIF_EF_AC" String="Creatore di Asset" />
+    <Translation ID="FIF_EF_BH" String="Altezza Edificio" />
+    <Translation ID="FIF_EF_MET" String="metri" />
+    <Translation ID="FIF_EF_FEE" String="piedi" />
+    <Translation ID="FIF_SET_ACLS" String="Elenca liste dei creatori di asset alfabeticamente" />
+    <Translation ID="FIF_GR_RAN" String="Selezione Casuale" />
+    <Translation ID="FIF_NET_SMR" String="Strade Piccole" />
+    <Translation ID="FIF_NET_MDR" String="Strade Medie" />
+    <Translation ID="FIF_NET_LGR" String="Strade Grandi" />
+    <Translation ID="FIF_NET_HGHW" String="Autostrade" />
+    <Translation ID="FIF_NET_PATH" String="Sentieri" />
+    <Translation ID="FIF_NET_WALL" String="Muri E Staccionate" />
+    <Translation ID="FIF_NET_WAT" String="Strutture per l'acqua" />
+    <Translation ID="FIF_PROP_MAR" String="Marcatore dell'Editor" />
+    <Translation ID="FIF_NET_TNR" String="Strade Piccole" />
+    <Translation ID="FIF_NET_UTI" String="Servizi" />
+    <Translation ID="FIF_NET_TRA" String="Treno" />
+    <Translation ID="FIF_SET_PM" String="Mostra i prop dei tipi di marcatori in gioco" />
+    <Translation ID="FIF_SET_PMTP" String="I prop dei tipi di marcatori sono invisibili e molti son funzionano in gioco. Usa Move It per cancellarli." />
+    <Translation ID="FIF_SET_IC" String="Mostra il numero di istanze esistenti di ogni asset" />
+    <Translation ID="FIF_EF_UN" String="Asset non usati" />
+    <Translation ID="FIF_QM_TIT" String="Quick Menu" />
+    <Translation ID="FIF_UIS_UN" String="Non in uso" />
+    <Translation ID="FIF_UIS_IN" String="In uso" />
+    <Translation ID="FIF_SET_ICTP" String="Questa opzione rallenta leggemente la velocità di ricerca. Disabilita quando non in uso" />
+    <Translation ID="FIF_SET_PO" String="Includdi oggetti procedurali" />
+    <Translation ID="FIF_SET_ICO" String="Usa l'opzione di elenco originale" />
+    <Translation ID="FIF_SET_ICUS" String="Mostra asset usati in cima" />
+    <Translation ID="FIF_SET_ICUN" String="Mostra asset non usati in cima" />
+    <Translation ID="FIF_TAG_BATTP" String="Modifica in gruppo" />
+    <Translation ID="FIF_SE_SEBTP" String="Pulisci la barra di ricerca" />
+    <Translation ID="FIF_SET_DB" String="Usa il browser di sistema al posto dell'overlay di Steam" />
+    <Translation ID="FIF_SET_DBTP" String="Click destro sull'icona di Steam nella copertina di un asset per vederlo sullo Steam Workshop" />
+    <Translation ID="FIF_NET_ONE" String="Strade a senso unico" />
+    <Translation ID="FIF_NET_PAR" String="Permetti Parcheggio" />
+    <Translation ID="FIF_NET_NOP" String="Nessun Parcheggio" />
+    <Translation ID="FIF_PROP_VEH" String="Veicoli senza categoria (generato dai prop Alberi e Veicoli)" />
+    <Translation ID="FIF_PROP_TRE" String="Alberi (generato dai prop Alberi e Veicoli)" />
+    <Translation ID="FIF_SET_BACK" String="Utilizza uno sfondo chiaro per il pannello principale" />
+    <Translation ID="FIF_SET_BACKTP" String="Più facile vedere asset scuri, ma più difficile vedere asset chiari" />
+    <Translation ID="FIF_SET_DUN" String="Disattiva notifiche di aggiornamenti futuri" />
+    <Translation ID="FIF_PROP_MOT" String="Veicoli (generato dai prop Alberi e Veicoli)" />
+    <Translation ID="FIF_PROP_RAI" String="Treni (generato dai prop Alberi e Veicoli)" />
+    <Translation ID="FIF_PROP_AIR" String="Aerei (generato dai prop Alberi e Veicoli)" />
+    <Translation ID="FIF_PROP_WAT" String="Barche (generato dai prop Alberi e Veicoli)" />
+    <Translation ID="FIF_EF_SB" String="Sub-edifici" />
+    <Translation ID="FIF_ATP_TP" String="Clicca lo spazio tra le finestre per muovere questo pannello" />
+    <Translation ID="FIF_SET_ATP" String="Mostra pannello dei tipi d asset" />
+    <Translation ID="FIF_EF_CT" String="Con Etichetta Personalizzata" />
+    <Translation ID="FIF_EF_NCT" String="Senza Etichetta Personalizzata" />
+    <Translation ID="FIF_UPN_UP" String="Aggiorna" />
+    <Translation ID="FIF_PROP_TC" String="Conforme al Terreno" />
+    <Translation ID="FIF_PROP_NTC" String="Non Conforme al Terreno" />
+    <Translation ID="FIF_SET_SSK" String="Usa parole chiave di ricerca diverse per ogni tipo di asset" />
+    <Translation ID="FIF_SET_SSKTP" String="Premi SHIFT mentre cambi tipo di asset per condividere parole chiave temporaneamente." />
+    <Translation ID="FIF_TAG_SA" String="Seleziona tutto" />
+    <Translation ID="FIF_TAG_SATP" String="Seleziona tutti gli oggetti visibili" />
+    <Translation ID="FIF_EF_UNEXP" String="Esporta Tutto" />
+    <Translation ID="FIF_EF_UNEXPTP" String="Esporta lista di non in uso workshop ID in file HTML con workshop links" />
+    <Translation ID="FIF_EF_UNEXPSE" String="Esporta Cercati" />
+    <Translation ID="FIF_EF_UNEXPTPSE" String="Esporta lista di non in uso workshop ID dell'ultima ricerca in file HTML con workshop links" />
+
+  </Translations>
+</Language>

@@ -122,8 +122,8 @@ namespace FindIt.GUI
             {
                 Settings.showAssetTypePanel = showAssetTypePanel.isChecked;
                 XMLUtils.SaveSettings();
-                if (Settings.showAssetTypePanel) UISearchBox.instance.CreateAssetTypePanel();
-                else UISearchBox.instance.DestroyAssetTypePanel();
+                if (Settings.showAssetTypePanel) UISearchBox.instance.assetTypePanel.isVisible = true; //UISearchBox.instance.CreateAssetTypePanel();
+                else UISearchBox.instance.assetTypePanel.isVisible = false; //UISearchBox.instance.DestroyAssetTypePanel();
             };
 
             // Show the number of existing instances of each asset

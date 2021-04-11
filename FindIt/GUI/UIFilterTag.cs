@@ -227,13 +227,13 @@ namespace FindIt.GUI
                     batchAssetSet.Clear();
                     batchButton.text = Translations.Translate("FIF_TAG_BAC");
                     batchButton.relativePosition = new Vector3(batchClearButton.relativePosition.x + batchClearButton.width + 5, 5);
-                    width = UISearchBox.instance.sizeLabel.position.x + batchClearButton.width + 5;
+                    width = UISearchBox.instance.sizeFilterX.position.x + batchClearButton.width + 5;
                 }
                 else
                 {
                     batchButton.text = Translations.Translate("FIF_TAG_BAT");
                     batchButton.relativePosition = new Vector3(deleteButton.relativePosition.x + deleteButton.width + 5, 5);
-                    width = UISearchBox.instance.sizeLabel.position.x;
+                    width = UISearchBox.instance.sizeFilterX.position.x;
                 }
                 UISearchBox.instance.scrollPanel.Refresh();
             };

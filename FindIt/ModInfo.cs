@@ -13,28 +13,12 @@ namespace FindIt
 {
     public class ModInfo : IUserMod
     {
-        public const string version = "2.0.7";
+        public const string version = "2.3.3";
         public const bool isBeta = false;
-        public const double updateNoticeDate = 20201029;
+        public const double updateNoticeDate = 20210411;
         public const string updateNotice =
 
-            "- Add a workaround patch for the inherited bulldoze tool hotkey bug\n\n" +
-
-            "    Not sure if the workaround patch will help or not.\n" +
-            "    This is a non-reproducible bug as it only happens to some players.\n\n" +
-
-            "- Vanilla assets will show which DLC or Content Creator Pack they belong to\n\n" +
-
-            "- (Optional. Disabled by default. Can be enabled in mod settings)\n" +
-            "  Each asset type can have their own separate search query keyword\n\n" +
-
-            "    When you switch from one asset type to another type temporarily, you\n" +
-            "    won't lose the original search. Hold SHIFT when switching asset type\n" +
-            "    to temporarily share search keyword between different asset types\n" +
-            "    Added by Brot\n\n" +
-
-            "- Minor UI changes\n" +
-            "- Miscellaneous backend changes\n\n";
+            "- Fix some minor UI bugs\n";
 
         public string Name
         {
@@ -88,16 +72,16 @@ namespace FindIt
                 UIPanel panel = group.self as UIPanel;
 
                 // Disable debug messages logging
-                UICheckBox checkBox = (UICheckBox)group.AddCheckbox(Translations.Translate("FIF_SET_DM"), Settings.hideDebugMessages, (b) =>
+                UICheckBox hideDebugMessages = (UICheckBox)group.AddCheckbox(Translations.Translate("FIF_SET_DM"), Settings.hideDebugMessages, (b) =>
                {
                    Settings.hideDebugMessages = b;
                    XMLUtils.SaveSettings();
                });
-                checkBox.tooltip = Translations.Translate("FIF_SET_DMTP");
+                hideDebugMessages.tooltip = Translations.Translate("FIF_SET_DMTP");
                 group.AddSpace(10);
 
                 // Center the main toolbar
-                checkBox = (UICheckBox)group.AddCheckbox(Translations.Translate("FIF_SET_CMT"), Settings.centerToolbar, (b) =>
+                UICheckBox centerToolbar = (UICheckBox)group.AddCheckbox(Translations.Translate("FIF_SET_CMT"), Settings.centerToolbar, (b) =>
                 {
                     Settings.centerToolbar = b;
                     XMLUtils.SaveSettings();
@@ -107,16 +91,16 @@ namespace FindIt
                         FindIt.instance.UpdateMainToolbar();
                     }
                 });
-                checkBox.tooltip = Translations.Translate("FIF_SET_CMTTP");
+                centerToolbar.tooltip = Translations.Translate("FIF_SET_CMTTP");
                 group.AddSpace(10);
 
                 // Unlock all
-                checkBox = (UICheckBox)group.AddCheckbox(Translations.Translate("FIF_SET_UL"), Settings.unlockAll, (b) =>
+                UICheckBox unlockAll = (UICheckBox)group.AddCheckbox(Translations.Translate("FIF_SET_UL"), Settings.unlockAll, (b) =>
                 {
                     Settings.unlockAll = b;
                     XMLUtils.SaveSettings();
                 });
-                checkBox.tooltip = Translations.Translate("FIF_SET_ULTP");
+                unlockAll.tooltip = Translations.Translate("FIF_SET_ULTP");
                 group.AddSpace(10);
 
                 // Fix bad props next loaded save
@@ -144,7 +128,7 @@ namespace FindIt
                     Settings.disableUpdateNotice = b;
                     XMLUtils.SaveSettings();
                 });
-                useDefaultBrowser.tooltip = Translations.Translate("FIF_SET_DBTP");
+                disableUpdateNotice.tooltip = Translations.Translate("FIF_SET_DBTP");
                 group.AddSpace(10);
 
                 // Disable update notice
