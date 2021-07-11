@@ -4,6 +4,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using ColossalFramework.UI;
+using System;
 
 namespace SamsamTS
 {
@@ -318,6 +319,13 @@ namespace SamsamTS
             }
 
             return _atlases[name];
+        }
+
+        public static string GetFormattedWorkshopTime(uint time)
+        {
+            DateTime dt = new DateTime(1970, 1, 1, 0, 0, 0, 0, System.DateTimeKind.Utc);
+            dt = dt.AddSeconds(time).ToLocalTime();
+            return dt.ToString("yyyy-MM-dd HH:mm");
         }
     }
 }

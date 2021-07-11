@@ -189,6 +189,8 @@ namespace FindIt
         public string author;
         public float score;
         public ulong downloadTime;
+        public uint createdTime;
+        public uint updatedTime;
         public bool isCCP = false;
         public bool isSubBuilding = false;
         public float buildingHeight = 0;

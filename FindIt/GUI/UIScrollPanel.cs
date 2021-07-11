@@ -507,6 +507,14 @@ namespace FindIt.GUI
                                 m_dlcSprite.isVisible = true;
                                 m_dlcSprite.spriteName = "UIFilterWorkshopItems";
                                 m_dlcSprite.tooltip = "By " + data.asset.author + "\n" + Translations.Translate("FIF_UIS_WS");
+                                if (data.asset.createdTime != 0)
+                                {
+                                    m_dlcSprite.tooltip += $"\nWorkshop created: {SamsamTS.UIUtils.GetFormattedWorkshopTime(data.asset.createdTime)}";
+                                }
+                                if (data.asset.updatedTime != 0)
+                                {
+                                    m_dlcSprite.tooltip += $"\nWorkshop updated: {SamsamTS.UIUtils.GetFormattedWorkshopTime(data.asset.updatedTime)}";
+                                }
                             }
                             else
                             {

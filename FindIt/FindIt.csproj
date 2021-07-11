@@ -95,6 +95,7 @@
     <Compile Include="GUI\UIUtils.cs" />
     <Compile Include="ModInfo.cs" />
     <Compile Include="OptionsKeymapping.cs" />
+    <Compile Include="Patches\EventUGCQueryCompleted.cs" />
     <Compile Include="Patches\GeneratedScrollPanel.cs" />
     <Compile Include="Patches\Patcher.cs" />
     <Compile Include="Patches\SelectUIButton.cs" />

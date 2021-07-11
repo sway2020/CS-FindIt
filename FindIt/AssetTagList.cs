@@ -151,10 +151,9 @@ namespace FindIt
                         }
 
                         // if steamID == 0, non-workshop
-                        if (!asset.prefab.m_isCustomContent)
-                        {
-                            asset.downloadTime = 0;
-                        }
+                        asset.createdTime = 0;
+                        asset.updatedTime = 0;
+                        if (!asset.prefab.m_isCustomContent) asset.downloadTime = 0;
                         else
                         {
                             Package.Asset packageAsset = PackageManager.FindAssetByName(asset.prefab.name, Package.AssetType.Object);
@@ -191,10 +190,19 @@ namespace FindIt
                                 }
                             }
                         }
-                        else
+                        else asset.downloadTime = 0;
+                        
+                        if (EventUGCQueryCompletedPatch.createdTimes.ContainsKey(asset.steamID))
                         {
-                            asset.downloadTime = 0;
+                            asset.createdTime = EventUGCQueryCompletedPatch.createdTimes[asset.steamID];
                         }
+                        else asset.createdTime = 0;
+
+                        if (EventUGCQueryCompletedPatch.updatedTimes.ContainsKey(asset.steamID))
+                        {
+                            asset.updatedTime = EventUGCQueryCompletedPatch.updatedTimes[asset.steamID];
+                        }
+                        else asset.updatedTime = 0;
                     }
 
                     asset.tagsDesc = AddAssetTags(asset, tagsDescDictionary, Asset.GetLocalizedDescription(asset.prefab));
