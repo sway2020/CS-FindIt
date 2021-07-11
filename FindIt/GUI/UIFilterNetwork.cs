@@ -27,6 +27,10 @@ namespace FindIt.GUI
             OneWay,
             Parking,
             NoParking,
+            Bus,
+            TrolleyBus,
+            Bike,
+            Tram,
             Unsorted,
             All
         }
@@ -63,6 +67,49 @@ namespace FindIt.GUI
             return info.m_hasParkingSpaces;
         }
 
+        public static bool HasBikeLane(NetInfo info)
+        {
+            // get all lanes
+            foreach(NetInfo.Lane laneInfo in info.m_lanes)
+            {
+                if ((laneInfo.m_vehicleType & VehicleInfo.VehicleType.Bicycle) != 0) return true;
+            }
+            return false;
+        }
+
+        public static bool HasTramLane(NetInfo info)
+        {
+            // get all lanes
+            foreach (NetInfo.Lane laneInfo in info.m_lanes)
+            {
+                if ((laneInfo.m_vehicleType & VehicleInfo.VehicleType.Tram) != 0) return true;
+            }
+            return false;
+        }
+
+        public static bool HasBuslane(NetInfo info)
+        {
+            // get all lanes
+            foreach (NetInfo.Lane laneInfo in info.m_lanes)
+            {
+                if ((laneInfo.m_vehicleType & VehicleInfo.VehicleType.Car) != 0)
+                {
+                    if ((laneInfo.m_laneType & NetInfo.LaneType.TransportVehicle) != 0) return true;
+                }
+            }
+            return false;
+        }
+
+        public static bool HasTrolleyBusLane(NetInfo info)
+        {
+            // get all lanes
+            foreach (NetInfo.Lane laneInfo in info.m_lanes)
+            {
+                if ((laneInfo.m_vehicleType & VehicleInfo.VehicleType.Trolleybus) != 0) return true;
+            }
+            return false;
+        }
+
         public class CategoryIcons
         {
             public static readonly string[] atlases =
@@ -80,6 +127,10 @@ namespace FindIt.GUI
                 "FindItAtlas",
                 "FindItAtlas",
                 "FindItAtlas",
+                "Ingame",
+                "Ingame",
+                "Ingame",
+                "Ingame",
                 "Ingame"
             };
 
@@ -98,6 +149,10 @@ namespace FindIt.GUI
                 "Oneway",
                 "Parking",
                 "NoParking",
+                "SubBarPublicTransportBus",
+                "SubBarPublicTransportTrolleybus",
+                "IconPolicyEncourageBiking",
+                "SubBarPublicTransportTramHovered",
                 "ToolbarIconHelp"
             };
 
@@ -116,6 +171,10 @@ namespace FindIt.GUI
                 Translations.Translate("FIF_NET_ONE"), // One-way Roads
                 Translations.Translate("FIF_NET_PAR"), // Roads with parking spaces
                 Translations.Translate("FIF_NET_NOP"), // Roads without parking spaces
+                Translations.Translate("FIF_NET_BUS"), // Roads with bus lanes
+                Translations.Translate("FIF_NET_TRO"), // Roads with trolley bus lanes
+                Translations.Translate("FIF_NET_BIK"), // Roads and paths with bike lanes
+                Translations.Translate("FIF_NET_TRM"), // Roads with tram tracks
                 Translations.Translate("FIF_PROP_UNS") // Unsorted
             };
         }
@@ -177,7 +236,7 @@ namespace FindIt.GUI
             {
                 toggles[i] = SamsamTS.UIUtils.CreateIconToggle(this, CategoryIcons.atlases[i], CategoryIcons.spriteNames[i], CategoryIcons.spriteNames[i], 0.4f);
                 toggles[i].tooltip = CategoryIcons.tooltips[i] + "\n" + Translations.Translate("FIF_SE_SC");
-                toggles[i].relativePosition = new Vector3(5 + 40 * i, 5);
+                toggles[i].relativePosition = new Vector3(5 + 38 * i, 5);
                 toggles[i].isChecked = true;
                 toggles[i].readOnly = true;
                 toggles[i].checkedBoxObject.isInteractive = false; // Don't eat my double click event please
@@ -237,14 +296,14 @@ namespace FindIt.GUI
             {
                 for (int i = 1; i < (int)Category.All; i++)
                 {
-                    toggles[i].relativePosition = new Vector3(5 + 40 * (i - 1), 5);
+                    toggles[i].relativePosition = new Vector3(5 + 38 * (i - 1), 5);
                 }
             }
 
             UICheckBox last = toggles[toggles.Length - 1];
 
             randomIcon = SamsamTS.UIUtils.CreateIconToggle(this, "FindItAtlas", "Dice", "Dice");
-            randomIcon.relativePosition = new Vector3(last.relativePosition.x + last.width + 5, 5);
+            randomIcon.relativePosition = new Vector3(last.relativePosition.x + last.width + 3, 5);
             randomIcon.tooltip = Translations.Translate("FIF_GR_RAN");
             randomIcon.isChecked = true;
             randomIcon.readOnly = true;
@@ -254,6 +313,7 @@ namespace FindIt.GUI
                 UISearchBox.instance.PickRandom();
             };
 
+            /*
             all = SamsamTS.UIUtils.CreateButton(this);
             all.size = new Vector2(55, 35);
             all.text = Translations.Translate("FIF_SE_IA");
@@ -267,6 +327,7 @@ namespace FindIt.GUI
                 }
                 eventFilteringChanged(this, 0);
             };
+            */
 
             width = parent.width;
         }

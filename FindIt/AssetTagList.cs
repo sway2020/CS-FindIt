@@ -95,8 +95,8 @@ namespace FindIt
                                 // Get the downloaded time of an asset by checking the creation time of its package
                                 // store this info and use it for sorting
                                 string path = current.package.packagePath;
-                                string parentPath = Directory.GetParent(path).FullName;
-                                //DateTime dt = Directory.GetCreationTimeUtc(parentPath);
+                                // string parentPath = Directory.GetParent(path).FullName;
+                                // DateTime dt = Directory.GetCreationTimeUtc(parentPath);
                                 DateTime dt = Directory.GetCreationTimeUtc(path);
                                 ulong time = (ulong)dt.Subtract(new DateTime(1970, 1, 1, 0, 0, 0, DateTimeKind.Utc)).TotalMilliseconds;
                                 downloadTimes.Add(steamid, time);
@@ -554,55 +554,57 @@ namespace FindIt
 
         public void SetNext2Assets()
         {
-            HashSet<string> next2AssetsNames = new HashSet<string>();
-            next2AssetsNames.Add("Two-Lane Alley");
-            next2AssetsNames.Add("One-Lane Oneway");
-            next2AssetsNames.Add("One-Lane Oneway With Parking");
-            next2AssetsNames.Add("Tiny Cul-De-Sac");
-            next2AssetsNames.Add("PlainStreet2L");
-            next2AssetsNames.Add("BasicRoadPntMdn");
-            next2AssetsNames.Add("One-Lane Oneway With Two Bicycle Lanes");
-            next2AssetsNames.Add("BasicRoadTL");
-            next2AssetsNames.Add("AsymRoadL1R2");
-            next2AssetsNames.Add("BasicRoadMdn");
-            next2AssetsNames.Add("BasicRoadMdn Decoration Grass");
-            next2AssetsNames.Add("BasicRoadMdn Decoration Trees");
-            next2AssetsNames.Add("Oneway3L");
-            next2AssetsNames.Add("Small Avenue");
-            next2AssetsNames.Add("AsymAvenueL2R4");
-            next2AssetsNames.Add("AsymAvenueL2R3");
-            next2AssetsNames.Add("AsymRoadL1R3");
-            next2AssetsNames.Add("Oneway4L");
-            next2AssetsNames.Add("Medium Avenue");
-            next2AssetsNames.Add("Medium Avenue TL");
-            next2AssetsNames.Add("Six-Lane Avenue Median");
-            next2AssetsNames.Add("Eight-Lane Avenue");
-            next2AssetsNames.Add("Small Rural Highway");
-            next2AssetsNames.Add("Rural Highway");
-            next2AssetsNames.Add("AsymHighwayL1R2");
-            next2AssetsNames.Add("Highway2L2W");
-            next2AssetsNames.Add("Four-Lane Highway");
-            next2AssetsNames.Add("Five-Lane Highway");
-            next2AssetsNames.Add("Large Highway");
-            next2AssetsNames.Add("Small Busway");
-            next2AssetsNames.Add("Small Busway Decoration Grass");
-            next2AssetsNames.Add("Small Busway Decoration Trees");
-            next2AssetsNames.Add("Small Busway OneWay");
-            next2AssetsNames.Add("Small Busway OneWay Decoration Grass");
-            next2AssetsNames.Add("Small Busway OneWay Decoration Trees");
-            next2AssetsNames.Add("Large Road With Bus Lanes");
-            next2AssetsNames.Add("Large Road Decoration Grass With Bus Lanes");
-            next2AssetsNames.Add("Large Road Decoration Trees With Bus Lanes");
-            next2AssetsNames.Add("Zonable Pedestrian Gravel Tiny");
-            next2AssetsNames.Add("Zonable Pedestrian Boardwalk Tiny");
-            next2AssetsNames.Add("Zonable Pedestrian Gravel");
-            next2AssetsNames.Add("Zonable Pedestrian Pavement Tiny");
-            next2AssetsNames.Add("Zonable Pedestrian Pavement");
-            next2AssetsNames.Add("Zonable Pedestrian Stone Tiny Road");
-            next2AssetsNames.Add("Zonable Promenade");
-            next2AssetsNames.Add("Medium Avenue Side Light");
-            next2AssetsNames.Add("Large Avenue Median Light");
-            next2AssetsNames.Add("BusLaneText");
+            HashSet<string> next2AssetsNames = new HashSet<string>
+            {
+                "Two-Lane Alley",
+                "One-Lane Oneway",
+                "One-Lane Oneway With Parking",
+                "Tiny Cul-De-Sac",
+                "PlainStreet2L",
+                "BasicRoadPntMdn",
+                "One-Lane Oneway With Two Bicycle Lanes",
+                "BasicRoadTL",
+                "AsymRoadL1R2",
+                "BasicRoadMdn",
+                "BasicRoadMdn Decoration Grass",
+                "BasicRoadMdn Decoration Trees",
+                "Oneway3L",
+                "Small Avenue",
+                "AsymAvenueL2R4",
+                "AsymAvenueL2R3",
+                "AsymRoadL1R3",
+                "Oneway4L",
+                "Medium Avenue",
+                "Medium Avenue TL",
+                "Six-Lane Avenue Median",
+                "Eight-Lane Avenue",
+                "Small Rural Highway",
+                "Rural Highway",
+                "AsymHighwayL1R2",
+                "Highway2L2W",
+                "Four-Lane Highway",
+                "Five-Lane Highway",
+                "Large Highway",
+                "Small Busway",
+                "Small Busway Decoration Grass",
+                "Small Busway Decoration Trees",
+                "Small Busway OneWay",
+                "Small Busway OneWay Decoration Grass",
+                "Small Busway OneWay Decoration Trees",
+                "Large Road With Bus Lanes",
+                "Large Road Decoration Grass With Bus Lanes",
+                "Large Road Decoration Trees With Bus Lanes",
+                "Zonable Pedestrian Gravel Tiny",
+                "Zonable Pedestrian Boardwalk Tiny",
+                "Zonable Pedestrian Gravel",
+                "Zonable Pedestrian Pavement Tiny",
+                "Zonable Pedestrian Pavement",
+                "Zonable Pedestrian Stone Tiny Road",
+                "Zonable Promenade",
+                "Medium Avenue Side Light",
+                "Large Avenue Median Light",
+                "BusLaneText"
+            };
 
             foreach (Asset asset in assets.Values)
             {
@@ -617,21 +619,23 @@ namespace FindIt
 
         public void SetETSTAssets()
         {
-            HashSet<string> etstAssetsNames = new HashSet<string>();
-            etstAssetsNames.Add("Station Track Eleva");
-            etstAssetsNames.Add("Station Track Elevated (C)");
-            etstAssetsNames.Add("Station Track Elevated (NP)");
-            etstAssetsNames.Add("Station Track Elevated (CNP)");
-            etstAssetsNames.Add("Station Track Elevated Narrow");
-            etstAssetsNames.Add("Station Track Elevated Narrow (C)");
-            etstAssetsNames.Add("Station Track Elevated Narrow (NP)");
-            etstAssetsNames.Add("Station Track Elevated Narrow (CNP)");
-            etstAssetsNames.Add("Station Track Sunken");
-            etstAssetsNames.Add("Station Track Sunken (NP)");
-            etstAssetsNames.Add("Train Station Track (C)");
-            etstAssetsNames.Add("Train Station Track (NP)");
-            etstAssetsNames.Add("Train Station Track (CNP)");
-            etstAssetsNames.Add("Station Track Tunnel");
+            HashSet<string> etstAssetsNames = new HashSet<string>
+            {
+                "Station Track Eleva",
+                "Station Track Elevated (C)",
+                "Station Track Elevated (NP)",
+                "Station Track Elevated (CNP)",
+                "Station Track Elevated Narrow",
+                "Station Track Elevated Narrow (C)",
+                "Station Track Elevated Narrow (NP)",
+                "Station Track Elevated Narrow (CNP)",
+                "Station Track Sunken",
+                "Station Track Sunken (NP)",
+                "Train Station Track (C)",
+                "Train Station Track (NP)",
+                "Train Station Track (CNP)",
+                "Station Track Tunnel"
+            };
             foreach (Asset asset in assets.Values)
             {
                 if (asset.assetType != Asset.AssetType.Network) continue;
